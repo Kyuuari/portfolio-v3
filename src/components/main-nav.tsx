@@ -23,16 +23,16 @@ export default function MainNav({}: Props) {
           Home
         </Link> */}
         <Link
-          href="/about"
+          href="/projects"
           className={cn("transition-colors hover:text-foreground/80")}
         >
-          About
+          Projects
         </Link>
         <Link
-          href="/typography"
+          href="/sketches"
           className={cn("transition-colors hover:text-foreground/80")}
         >
-          Typography
+          Sketches
         </Link>
         <Link
           href={"https://github.com/Kyuuari"}

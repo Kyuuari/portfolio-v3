@@ -57,7 +57,9 @@ export default function Home() {
 
         <div className="justify-end overflow-hidden">
           <Marquee repeat={5}>
-            <TypographyH1>Not all those who wander are lost</TypographyH1>
+            <TypographyH1>
+              Not all those who wander are lost &nbsp;
+            </TypographyH1>
           </Marquee>
         </div>
       </article>
@@ -77,13 +79,13 @@ export default function Home() {
             <br />I like to <b>push the boundaries </b> and <b>explore </b> new
             tech. Currently I am building projects using <b>WebGL</b> and
             looking at a variety
-            <b> animation libaries</b>.
+            <b> animation </b> libaries.
             <br />
             <br />
             When I&apos;m not coding, you can find me pursuing my other creative
-            passions, including drawing, 3D modeling, and motion design. I also
-            enjoy playing video games and staying up-to-date on the latest
-            industry trends and innovations.
+            passions, including <b>drawing</b>, <b>3D modeling</b>, and
+            <b> motion design</b>. I also enjoy playing video games and staying
+            up-to-date on the latest industry trends and innovations.
           </TypographyP>
         </section>
       </article>
@@ -100,8 +102,8 @@ export default function Home() {
           <TypographyP>
             The Kyuuari Project is a collection of
             <b> web applications </b>, <b>UI/UX</b>, and <b>digital art</b>{" "}
-            projects built by meself and is a hub for me to explore and post my
-            work
+            projects built by myself and is a hub for me to explore and post my
+            work.
           </TypographyP>
         </section>
       </article>

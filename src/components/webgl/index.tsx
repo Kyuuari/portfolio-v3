@@ -42,7 +42,7 @@ const Content = () => {
       <article className="grid h-full w-full grow place-items-center">
         <FadeUp>
           <TypographyDisplay>
-            Creative <br /> Developer
+            Creative+ <br /> Developer
           </TypographyDisplay>
         </FadeUp>
       </article>
