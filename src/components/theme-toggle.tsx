@@ -1,7 +1,7 @@
+"use client";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
-// import { Sun, Moon } from "lucide-react";
 import { Icons } from "@/components/icons";
 
 type Props = {
@@ -34,7 +34,12 @@ export default function ThemeToggle({
   };
 
   return (
-    <Button size={size} variant={varient} onClick={toggleTheme}>
+    <Button
+      aria-label="theme toggle"
+      size={size}
+      variant={varient}
+      onClick={toggleTheme}
+    >
       {themeIcons[theme]}
     </Button>
   );
