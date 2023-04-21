@@ -8,9 +8,9 @@ import { Lenis as ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import { LenisProvider } from "@/components/lenis-provider";
 
 export const metadata = {
-  title: "Kuro.ui",
+  title: "Kyuuari Project",
   description:
-    "Kuro.ui is a compnent libary and exploration for my own design system",
+    "Chester Cari (@Kyuuari) - Exploring the intersection of design and technology with The Kyuuari Project, a collection of web applications, UI/UX, and digital art projects. This showcase combines my passion for design and technology into fun and creative works",
 };
 
 export default function RootLayout({
