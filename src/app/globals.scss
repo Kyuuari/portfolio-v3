@@ -2,18 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./cursor.scss";
+
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    // --background: 0 0% 100%;
+    --background: 46 45% 94%;
     --foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --popover: 0 0% 100%;
+    // --popover: 0 0% 100%;
+    --popover: 46 45% 94%;
     --popover-foreground: 222.2 47.4% 11.2%;
 
-    --card: 0 0% 100%;
+    // --card: 0 0% 100%;
+    --card: 46 45% 94%;
     --card-foreground: 222.2 47.4% 11.2%;
 
     --border: 214.3 31.8% 91.4%;
@@ -37,8 +43,9 @@
   }
 
   .dark {
-    /* --background: 224 71% 4%; */
-    --background: 43, 14%, 5%, 1;
+
+    // --background: 43, 14%, 5%, 1;
+    --background: 40, 6%, 7%, 1;
     --foreground: 213 31% 91%;
 
     --muted: 223 47% 11%;
@@ -83,16 +90,4 @@
   }
 }
 
-@layer components {
-  .kuro-h1 {
-    @apply font-display scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
-  }
 
-  .kuro-sub {
-    @apply font-sub scroll-m-20 text-2xl font-semibold tracking-tight;
-  }
-
-  .kuro-p {
-    @apply font-body leading-7 [&:not(:first-child)]:mt-6;
-  }
-}

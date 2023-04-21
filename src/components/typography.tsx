@@ -21,14 +21,14 @@ export function TypographyDisplay({ children, className }: Props) {
 
 export function TypographySub({ children, className }: Props) {
   return (
-    <h2
+    <p
       className={cn(
         className,
         "font-sub italic scroll-m-20 text-2xl font-semibold tracking-tight;"
       )}
     >
       {children}
-    </h2>
+    </p>
   );
 }
 

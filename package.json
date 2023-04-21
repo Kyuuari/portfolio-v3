@@ -2,7 +2,7 @@
   "name": "kuro-ui",
   "version": "0.1.0",
   "private": true,
-    "author": {
+  "author": {
     "name": "Chester Cari",
     "url": "https://github.com/Kyuuari"
   },
@@ -17,23 +17,32 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.1",
     "@radix-ui/react-navigation-menu": "^1.1.2",
+    "@react-three/drei": "^9.65.4",
+    "@react-three/fiber": "^8.12.2",
+    "@studio-freight/lenis": "^1.0.10",
+    "@studio-freight/react-lenis": "^0.0.17",
     "@types/node": "18.15.11",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
+    "@types/three": "^0.150.2",
     "autoprefixer": "10.4.14",
     "class-variance-authority": "^0.5.2",
     "clsx": "^1.2.1",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "gsap": "^3.11.5",
     "lucide-react": "^0.161.0",
+    "mouse-follower": "^1.1.2",
     "next": "13.3.0",
     "next-themes": "^0.2.1",
     "postcss": "8.4.22",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.62.0",
     "tailwind-merge": "^1.12.0",
     "tailwindcss": "3.3.1",
     "tailwindcss-animate": "^1.0.5",
+    "three": "^0.151.3",
     "typescript": "5.0.4"
   },
   "devDependencies": {
