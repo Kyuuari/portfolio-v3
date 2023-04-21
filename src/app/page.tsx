@@ -80,7 +80,7 @@ export default function Home() {
             <b> animation libaries</b>.
             <br />
             <br />
-            When I'm not coding, you can find me pursuing my other creative
+            When I&apos;m not coding, you can find me pursuing my other creative
             passions, including drawing, 3D modeling, and motion design. I also
             enjoy playing video games and staying up-to-date on the latest
             industry trends and innovations.
@@ -96,7 +96,7 @@ export default function Home() {
           data-cursor-text="🔥🔥🔥"
           className="col-span-full md:col-start-1 md:col-span-7"
         >
-          <TypographyH2>What's the Kyuuari Project?</TypographyH2>
+          <TypographyH2>What&apos;s the Kyuuari Project?</TypographyH2>
           <TypographyP>
             The Kyuuari Project is a collection of
             <b> web applications </b>, <b>UI/UX</b>, and <b>digital art</b>{" "}
