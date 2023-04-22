@@ -2,13 +2,15 @@
 import React, { ReactNode, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { cn } from "@/lib/utils";
 gsap.registerPlugin(ScrollTrigger);
 
 type Props = {
   children: ReactNode;
+  className?: string;
 };
 
-export default function FadeUp({ children }: Props) {
+export default function FadeUp({ children, className }: Props) {
   const ref = useRef<HTMLDivElement>(null!);
 
   useEffect(() => {
@@ -45,7 +47,10 @@ export default function FadeUp({ children }: Props) {
   return (
     <div
       ref={ref}
-      className="font-display scroll-m-20 text-7xl font-extrabold tracking-tight lg:text-8xl"
+      className={cn(
+        className,
+        "font-display scroll-m-20 text-7xl font-extrabold tracking-tight lg:text-8xl"
+      )}
     >
       {children}
     </div>

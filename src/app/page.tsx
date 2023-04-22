@@ -27,14 +27,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="container">
+    <main>
       <article className="h-screen flex flex-1 flex-col items-center justify-center">
         <WebGL />
       </article>
 
       <article className="h-[80vh] flex flex-col justify-evenly">
         <div className="justify-start overflow-hidden">
-          <Marquee repeat={5}>
+          <Marquee repeat={7}>
             <TypographyH1>
               Not all those who wander are lost &nbsp;
             </TypographyH1>
@@ -47,16 +47,19 @@ export default function Home() {
               <TypographyDisplay>WHO AM I?</TypographyDisplay>
             </FadeUp>
             <TypographyH2>Hi 👋, My name is Chester</TypographyH2>
-            {/* <TypographySmall>Chester Cari @Kyuuari</TypographySmall> */}
+            <TypographySmall>
+              &quot;Not all those who wander are lost&quot;
+            </TypographySmall>
             <TypographyP>
-              I love merging <b>creativity</b> with <b>technology</b>. I
-              specialize in designing and developing things for the web.
+              I love to explore and merge <b>creativity</b> with{" "}
+              <b>technology</b>. I specialize in designing and developing things
+              for the web.
             </TypographyP>
           </div>
         </div>
 
         <div className="justify-end overflow-hidden">
-          <Marquee repeat={5}>
+          <Marquee repeat={7}>
             <TypographyH1>
               Not all those who wander are lost &nbsp;
             </TypographyH1>
@@ -64,7 +67,7 @@ export default function Home() {
         </div>
       </article>
 
-      <article className="h-full py-12 flex flex-col gap-4">
+      <article className="h-full py-12 flex flex-col gap-4 container">
         <section data-cursor-text="🤔 I BUILD STUFF?" className="">
           <FadeUp>
             <TypographyDisplay>WHAT I DO?</TypographyDisplay>
@@ -90,10 +93,11 @@ export default function Home() {
         </section>
       </article>
 
-      <article className="h-full py-12 flex flex-col gap-4 md:grid md:grid-cols-8">
-        <TypographyDisplay className="col-start-7 md:self-end">
-          kyuuari
-        </TypographyDisplay>
+      <article className="h-full py-12 flex flex-col gap-4 md:grid md:grid-cols-8 container">
+        <FadeUp className="col-start-7 md:self-end">
+          <TypographyDisplay>Kyuuari</TypographyDisplay>
+        </FadeUp>
+
         <section
           data-cursor-text="🔥🔥🔥"
           className="col-span-full md:col-start-1 md:col-span-7"
