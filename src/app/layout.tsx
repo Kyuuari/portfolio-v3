@@ -39,7 +39,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </ThemeProvider>
             </Suspense>
           </LenisProvider>
-          <Analytics />
+          {/* <Analytics /> */}
         </body>
       </html>
     </>

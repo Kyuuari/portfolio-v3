@@ -94,9 +94,10 @@ export default function Home() {
       </article>
 
       <article className="h-full py-12 flex flex-col gap-4 md:grid md:grid-cols-8 container">
-        <TypographyDisplay className="col-start-7 md:self-end">
-          kyuuari
-        </TypographyDisplay>
+        <FadeUp className="col-start-7 md:self-end">
+          <TypographyDisplay>Kyuuari</TypographyDisplay>
+        </FadeUp>
+
         <section
           data-cursor-text="🔥🔥🔥"
           className="col-span-full md:col-start-1 md:col-span-7"
