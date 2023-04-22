@@ -4,8 +4,8 @@ import { bebas, chivo, playfair, spectral } from "@/lib/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
 import SiteHeader from "@/components/site-header";
 import { Suspense } from "react";
-import { Lenis as ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import { LenisProvider } from "@/components/lenis-provider";
+import { Analytics } from "@/components/analytics-provider";
 
 export const metadata = {
   title: "Kyuuari Project",
@@ -19,18 +19,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={cn(
-        bebas.variable,
-        spectral.variable,
-        playfair.variable,
-        chivo.variable
-      )}
-      suppressHydrationWarning
-    >
+    <html lang="en" suppressHydrationWarning>
       <head />
-      <body>
+      <body
+        className={cn(
+          bebas.variable,
+          spectral.variable,
+          playfair.variable,
+          chivo.variable
+        )}
+      >
         <LenisProvider>
           <Suspense fallback={"Loading..."}>
             <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
@@ -39,6 +37,7 @@ export default function RootLayout({
             </ThemeProvider>
           </Suspense>
         </LenisProvider>
+        <Analytics />
       </body>
     </html>
   );
