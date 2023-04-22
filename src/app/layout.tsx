@@ -13,32 +13,35 @@ export const metadata = {
     "Chester Cari (@Kyuuari) - Exploring the intersection of design and technology with The Kyuuari Project, a collection of web applications, UI/UX, and digital art projects. This showcase combines my passion for design and technology into fun and creative works",
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body
-        className={cn(
-          bebas.variable,
-          spectral.variable,
-          playfair.variable,
-          chivo.variable
-        )}
-      >
-        <LenisProvider>
-          <Suspense fallback={"Loading..."}>
-            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-              <SiteHeader />
-              {children}
-            </ThemeProvider>
-          </Suspense>
-        </LenisProvider>
-        <Analytics />
-      </body>
-    </html>
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body
+          className={cn(
+            bebas.variable,
+            spectral.variable,
+            playfair.variable,
+            chivo.variable,
+            "min-h-screen bg-background font-sans antialiased"
+          )}
+        >
+          <LenisProvider>
+            <Suspense fallback={"Loading..."}>
+              <ThemeProvider attribute="class" defaultTheme="dark">
+                <SiteHeader />
+                {children}
+              </ThemeProvider>
+            </Suspense>
+          </LenisProvider>
+          <Analytics />
+        </body>
+      </html>
+    </>
   );
 }
