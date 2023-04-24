@@ -4,9 +4,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 MouseFollower.registerGSAP(gsap);
 import {
+  TypographyBlockquote,
   TypographyDisplay,
   TypographyH1,
   TypographyH2,
+  TypographyLarge,
+  TypographyLead,
   TypographyP,
   TypographySmall,
 } from "@/components/typography";
@@ -41,20 +44,23 @@ export default function Home() {
           </Marquee>
         </div>
 
-        <div className="h-full grid place-items-center">
+        <div className="h-full grid place-items-center container">
           <div data-cursor-text="👋 HI" className="text-center">
             <FadeUp>
               <TypographyDisplay>WHO AM I?</TypographyDisplay>
             </FadeUp>
             <TypographyH2>Hi 👋, My name is Chester</TypographyH2>
-            <TypographySmall>
-              &quot;Not all those who wander are lost&quot;
-            </TypographySmall>
             <TypographyP>
-              I love to explore and merge <b>creativity</b> with{" "}
-              <b>technology</b>. I specialize in designing and developing things
-              for the web.
+              I believe in exploration and experimentation. <br />
+              Merging my passions for <b>creativity</b> and <b>technology</b>, I
+              specialize in <b>designing</b> and
+              <b> developing</b> things for the web.
             </TypographyP>
+            <br />
+            <TypographySmall>
+              &quot;Not all those who wander are lost&quot; - J.R.R. Tolkien,
+              The Fellowship of the Ring
+            </TypographySmall>
           </div>
         </div>
 

@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { within, userEvent } from "@storybook/testing-library";
-import { AccordionDemo } from "../components/accordion-demo";
-import { ThemeProvider } from "next-themes";
+import { AccordionDemo } from "../../src/components/accordion-demo";
 
 const meta: Meta<typeof AccordionDemo> = {
   title: "component/AccordionDemo",
