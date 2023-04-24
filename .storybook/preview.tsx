@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react";
 import React from "react";
-import "@/app/globals.css";
+import "@/app/globals.scss";
 import { cn } from "../src/lib/utils";
 import { bebas, playfair, spectral } from "../src/lib/fonts";
 import { ThemeProvider } from "next-themes";

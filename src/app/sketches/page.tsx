@@ -14,9 +14,9 @@ export default function page({}: Props) {
         <TypographyDisplay>Work In Progress</TypographyDisplay>
         <TypographyH1>* Sketches *</TypographyH1>
         <TypographyP>
-          This section is will be dedicated to my works in <b>WebGL</b>,{" "}
+          This section will be dedicated to my works in <b>WebGL</b>,{" "}
           <b>Graphic Design</b>, and <b>Motion Design </b>
-          as I work on building my portfoio up please check out my Github and
+          as I work on building my portfolio up, please check out my Github and
           other socials to keep up with my growth and progress!
         </TypographyP>
       </article>
