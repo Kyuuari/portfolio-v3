@@ -6,6 +6,7 @@ import SiteHeader from "@/components/site-header";
 import { Suspense } from "react";
 import { LenisProvider } from "@/components/lenis-provider";
 import { Analytics } from "@/components/analytics-provider";
+import { SiteFooter } from "@/components/site-footer";
 
 export const metadata = {
   title: "Kyuuari Project",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <ThemeProvider attribute="class" defaultTheme="dark">
                 <SiteHeader />
                 {children}
+                <SiteFooter />
               </ThemeProvider>
             </Suspense>
           </LenisProvider>
