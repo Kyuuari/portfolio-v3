@@ -13,7 +13,7 @@ Open source community has given me so much, I decided to share my portfolio and 
 
 If you are going to use this as a base/template for a site, I dont mind but please include attribution 
 
-Please review the license.txt file and remove all of my personal information
+Please review the [license.txt](https://github.com/Kyuuari/portfolio-v3/blob/main/LICENSE.txt) file and remove all of my personal information
 
 
 ## Screenshots
