@@ -24,6 +24,15 @@ export default function page({}: Props) {
         <section className="pt-20">
           <Link
             className="hover:opacity-20"
+            href={"https://movie-kyuu.vercel.app/"}
+          >
+            <TypographyDisplay>MovieKyuu</TypographyDisplay>
+            {/* <TypographyP>Small Lab Project</TypographyP> */}
+          </Link>
+          <hr className="py-10" />
+
+          <Link
+            className="hover:opacity-20"
             href={"https://another-pokedex-xi.vercel.app/"}
           >
             <TypographyDisplay>Another Pokedex</TypographyDisplay>
